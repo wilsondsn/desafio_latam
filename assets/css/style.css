@@ -1,0 +1,212 @@
+
+body {
+  text-align:center;
+  color:#000f08;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+body * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* El asterísco, indica que todas las etiquetas dentro de body adoptan las propiedades declaradas. */
+
+
+/* ajuste de imagen al límite de ancho en pantalla */
+img {
+    max-width: 100%;
+    /* Si coloco max-width:100% la imagen del home se expande al ancho de pantalla, ya que no está dentro de un contenedor. */
+}
+
+nav {
+  text-align : left;
+  padding : 1.25rem 4rem ;
+  position : fixed;
+  width : 100vw ;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+  vertical-align: middle;
+}
+
+.icono {
+  width: 2rem;
+}
+
+.icono svg {
+  fill: #ffffff;
+}
+
+
+h1 {
+  font-weight: 800;
+  font-size: 2.8rem;/* 300% del tamaño fuente del padre, que por defecto es 16px */
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem; /* modificado */
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+.subtitulo, h4, h5 {
+  font-weight: 400;
+}
+
+/* El código de color hexadecimal se traduce en #RRGGBB siendo el valor f el más alto.
+#ff0000 es igual a rojo #00ff00 es igual a verde y #0000ff es igual a azul.
+Los valores van de 0 1 2 3 4 5 6 7 8 9 a b c d e f */
+
+.oscuro {
+  background-color: #000f08
+}
+
+.oscuro a {
+  color:#fff;
+  text-decoration:none;
+}
+
+#ubicacion h2 {
+  margin: 1rem auto;
+}
+
+/* contenedor de Próxima Charla */
+/* nowrap elimina la distancia por defecto entre divs dentro del contenedor, permitiendo manejar los anchos relativos de forma más exacta. */
+.sweet-brown {
+  background-color: #a4452c;
+  text-align: left;
+  color: #ffffff;
+  padding: 4rem;
+  white-space: nowrap;
+}
+
+.sweet-brown h3, .sweet-brown h5 {
+  margin-bottom: 0.5rem;
+}
+
+#eventos h2 {
+  margin-bottom: 1rem;
+
+}
+
+#eventos h3 {
+  margin: 1rem auto;
+}
+
+.hero-section {
+  text-align : right;
+  background-image :url('../img/bg-hero.png');
+  background-repeat : no-repeat;
+  background-size : cover;
+  color : #ffffff ;
+  text-shadow : 0.125rem 0.25rem 0.125rem #707070 ;
+  padding: 7.125rem 3.125rem; /* modificado padding arriba y abajo */
+}
+
+/* text shadow se compone de: sombra horizontal + sombra vertical + radio del blur + color*/
+/* Padding / margin: al colocar 4 valores, se leen de la siguiente forma:: arriba - derecha - abajo - izquierda */
+/* Unidades de medidas relativas, porcentaje, rem (depende del tamaño funente del html), em (depende del tamaño fuente de su contenedor) y vh (vertical height) vw (vertical width) */ /* Otras soluciones aquí: https://uxengineer.com/inline-block-elements-100-percent-width/ */
+
+/* añadido */
+#inicio h1 {
+    width: 80%;
+    display: inline-block;
+}
+/*--------------------------*/
+
+.centrado {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.charla-speaker {
+  width: 25%;
+  vertical-align: middle;
+}
+
+.charla-texto {
+  width: 70%;
+  vertical-align: middle;
+  margin-left: 2.5%;
+  white-space: normal;
+}
+
+.charla-texto, .evento {
+  display:inline-block;
+}
+
+/* añadido */
+.evento {
+    width: 20rem;
+    margin: 0 3.5rem;
+}
+/*--------------------------*/
+
+section, footer {
+  margin-top: 4.5rem;
+}
+
+footer {
+  padding: 3.125rem;
+  color: #ffffff;
+}
+
+footer i {
+  margin: 0 0.24em 0.5rem;
+}
+
+/* -- Estilos Post -- */
+
+.contenido {
+    display: inline;
+}
+
+.contenido article {
+    width: 50%;
+    margin: 0 auto;
+    padding: 6rem 0;
+}
+
+.contenido h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.contenido h1, .contenido h3 {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.contenido p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.evento a {
+    text-decoration: none;
+    color: #000f08;
+}
+
+.evento a:hover {
+    color: #a4452c;
+}
